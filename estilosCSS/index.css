@@ -1,26 +1,70 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body{
     background-color: rgb(22, 22, 22);
     font-family: Quicksand;
     color: white;
 }
-nav{
-    display: grid;
-    grid-template-columns: 30% 40% 30%;
+
+header {
+    display: inline;
+    padding: 5px 10%;
+}
+
+header nav .navbar {
+    /* eliminamos las viñetas */
+    list-style: none;
+    overflow: hidden;
     text-align: center;
 }
-nav #loginRegister img{
+header nav li {
+    /* ponemos las opciones en horizontal */
+    display: inline-block;
+    padding: 10px 30px;
+}
+#loginRegister #userPhoto{
    max-width: 60px;
    max-height: 60px;
    border-radius: 100%;
    float: left;
    margin: 1px 0px 0px 50px;
 }
+#logoIcon {
+    max-width: 60px;
+    max-height: 60px;
+    border-radius: 100%;
+    float: left;
+    margin: 1px 0px 0px 50px;
+ }
+/*
+nav{
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    text-align: center;
+}
+
 nav #loginRegister p{
     font-size: 18px;
     margin-right: 200px;
 }
-
 nav ul #option{
     display: inline-block;
     margin: 0px 50px;
+}
+nav ul #option a{
+    
+}
+nav ul #option #line{
+    background-color: white;
+    min-height: 1px;
+    margin: 0px 100%;
+}
+nav ul #option a:hover #line{
+    margin: 0px 0px;
+    transition-property: margin;
+    transition-duration: 240ms;
 }
