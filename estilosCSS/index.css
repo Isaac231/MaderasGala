@@ -7,7 +7,7 @@
 body{
     font-family: Quicksand;
     color: white;
-    background: url(../resources/Imagenes/fondo.webp) center center no-repeat;
+    background: url(../resources/Imagenes//fondoCarpintero.png) center center no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
@@ -21,7 +21,6 @@ body:before{
 body *{
     position: relative;
 }
-
 header {
     display: flex;
     justify-content: space-between;
@@ -71,15 +70,9 @@ header nav li a:hover #line{
     width: 160px;
     height: auto;
     float: right;
+    
 }
 
 #logoIcon:hover {
     cursor: pointer;
-}
-.container {
-    background-image: url(../resources/Imagenes/fondo.webp);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
 }
