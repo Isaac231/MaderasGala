@@ -5,7 +5,7 @@ body{
 }
 nav{
     display: grid;
-    grid-template-columns: 20% 60% 20%;
+    grid-template-columns: 30% 40% 30%;
     text-align: center;
 }
 nav #loginRegister img{
@@ -17,9 +17,10 @@ nav #loginRegister img{
 }
 nav #loginRegister p{
     font-size: 18px;
+    margin-right: 200px;
 }
-nav #options li{
+
+nav ul #option{
     display: inline-block;
-    padding: 2px 60px;
-    font-size: 20px;
+    margin: 0px 50px;
 }
