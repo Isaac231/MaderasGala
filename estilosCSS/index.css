@@ -41,8 +41,8 @@ header nav ul li a {
     font-size: 18px;
 }
 header nav li a #line{
-    background-color: rgb(255, 255, 255); 
-    min-height: 1px;
+    background-color: rgb(250, 128, 16);
+    min-height: 2px;
     margin: 0px 100%;
 }
 header nav li a:hover #line{
@@ -55,6 +55,16 @@ header nav li a:hover #line{
     justify-content: space-between;
     align-items: center;
     width: 300px;
+}
+#loginRegister a #line{
+    background-color: rgb(250, 128, 16);
+    min-height: 2px;
+    margin: 0px 100%;
+}
+#loginRegister a:hover #line{
+    margin: 0px 0%;
+    transition-property: margin;
+    transition-duration: 350ms;
 }
 
 #loginRegister #userPhoto{
@@ -70,7 +80,7 @@ header nav li a:hover #line{
     width: 160px;
     height: auto;
     float: right;
-    
+    filter: opacity(60%);
 }
 
 #logoIcon:hover {
