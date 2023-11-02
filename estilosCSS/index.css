@@ -1,26 +1,88 @@
-body{
-    background-color: rgb(22, 22, 22);
-    font-family: Quicksand;
-    color: white;
-}
-nav{
-    display: grid;
-    grid-template-columns: 30% 40% 30%;
-    text-align: center;
-}
-nav #loginRegister img{
-   max-width: 60px;
-   max-height: 60px;
-   border-radius: 100%;
-   float: left;
-   margin: 1px 0px 0px 50px;
-}
-nav #loginRegister p{
-    font-size: 18px;
-    margin-right: 200px;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-nav ul #option{
+body{
+    font-family: Quicksand;
+    color: white;
+    background: url(../resources/Imagenes//fondoCarpintero.png) center center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+body:before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(1, 1, 1, 0.65);
+}
+body *{
+    position: relative;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5%;
+
+}
+header a{
+    text-decoration: none;
+    color: white;
+}
+header nav ul li {
     display: inline-block;
-    margin: 0px 50px;
+    padding: 0 50px;
+}
+header nav ul li a {
+    padding: auto 10px;
+    font-size: 18px;
+}
+header nav li a #line{
+    background-color: rgb(250, 128, 16);
+    min-height: 2px;
+    margin: 0px 100%;
+}
+header nav li a:hover #line{
+    margin: 0px 0px;
+    transition-property: margin;
+    transition-duration: 300ms;
+}
+#loginRegister {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+}
+#loginRegister a #line{
+    background-color: rgb(250, 128, 16);
+    min-height: 2px;
+    margin: 0px 100%;
+}
+#loginRegister a:hover #line{
+    margin: 0px 0%;
+    transition-property: margin;
+    transition-duration: 350ms;
+}
+
+#loginRegister #userPhoto{
+    max-width: 60px;
+    max-height: 60px;
+    border-radius: 100%;
+}
+
+.iconRegion {
+    width: 300px;
+}
+.iconRegion #logoIcon {
+    width: 160px;
+    height: auto;
+    float: right;
+    filter: opacity(60%);
+}
+
+#logoIcon:hover {
+    cursor: pointer;
 }
